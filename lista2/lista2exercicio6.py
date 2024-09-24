@@ -2,19 +2,16 @@ from abc import ABC, abstractmethod
 from datetime import date,datetime
 
 class Veiculo(ABC):
-    @abstractmethod
+   
     def __init__(
-            self,
-            marca: str,
-            modelo: str,
-            chegada:datetime     
+            self    
         ):
-        self.marca = marca
-        self.modelo = modelo
-        self.chegada = chegada
+        self.marca: str
+        self.modelo: str
+        self.chegada: datetime
       
-
-    def calcular_taxa(self, taxa: float, saida: datetime): 
+    @abstractmethod
+    def calcular_taxa(): 
         pass
         
         
