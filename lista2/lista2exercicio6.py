@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from datetime import date,datetime
 
 class Veiculo(ABC):
+    @abstractmethod
     def __init__(
             self,
             marca: str,
