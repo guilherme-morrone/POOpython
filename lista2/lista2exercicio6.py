@@ -11,7 +11,7 @@ class Veiculo(ABC):
         self.chegada: datetime
       
     @abstractmethod
-    def calcular_taxa(): 
+    def calcular_taxa(self): 
         pass
         
         
